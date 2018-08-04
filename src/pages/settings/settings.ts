@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import{NavController, AlertController} from 'ionic-angular';
-import {RedditService}  from '../../app/services/reddit.service';
-import {ReditsPage } from '../redits/redits';
+// import {ReditsPage } from '../redits/redits';
 
 @Component({
   selector: 'page-settings',
@@ -10,7 +9,7 @@ import {ReditsPage } from '../redits/redits';
 export class SettingsPage{
   category:any;
   limit: any;
-  constructor(public navCtrl: NavController, private redditService: RedditService, private alertCtl: AlertController){
+  constructor(public navCtrl: NavController,private alertCtl: AlertController){
     this.getDefaults();
   }
   getDefaults(){
